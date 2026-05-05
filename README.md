@@ -2,6 +2,8 @@
 
 This project is a Streamlit dashboard that displays selected monthly labor market indicators from the U.S. Bureau of Labor Statistics.
 
+link: https://final-project-jc8cgmttscxwcj6ytjzjte.streamlit.app/
+
 ## Indicators
 
 The dashboard includes:
