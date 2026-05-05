@@ -293,36 +293,50 @@ with yearly_tab:
 
 
 # Recent changes table
-st.subheader("Recent Labor Market Changes")
+# Filtered change table
+st.subheader("Filtered Labor Market Data Table")
 
-recent_table = (
-    df.sort_values("date")
-    .groupby("indicator")
-    .tail(1)
-    .copy()
-)
+table_col1, table_col2 = st.columns(2)
 
-recent_table = recent_table[
-    [
-        "indicator",
-        "date",
-        "value",
-        "unit",
-        "monthly_change",
-        "year_over_year_change",
-        "monthly_percent_change",
-        "year_over_year_percent_change",
-    ]
-]
+with table_col1:
+    table_indicators = st.multiselect(
+        "Select indicators for table",
+        indicators,
+        default=[
+            "Total Nonfarm Employment",
+            "Unemployment Rate",
+            "Average Hourly Earnings",
+            "Average Weekly Hours",
+        ],
+        key="table_indicator_selector",
+    )
 
-recent_table["date"] = recent_table["date"].dt.strftime("%Y-%m")
+with table_col2:
+    table_date_range = st.slider(
+        "Select date range for table",
+        min_value=min_date.to_pydatetime(),
+        max_value=max_date.to_pydatetime(),
+        value=(min_date.to_pydatetime(), max_date.to_pydatetime()),
+        key="table_date_range",
+    )
 
-recent_table = recent_table.rename(
+table_df = df[
+    (df["indicator"].isin(table_indicators))
+    & (df["date"] >= pd.to_datetime(table_date_range[0]))
+    & (df["date"] <= pd.to_datetime(table_date_range[1]))
+].copy()
+
+table_df = table_df.sort_values(["indicator", "date"])
+
+# Rename columns for display
+display_table = table_df.rename(
     columns={
+        "date": "Date",
+        "series_id": "Series ID",
         "indicator": "Indicator",
-        "date": "Latest Month",
-        "value": "Latest Value",
+        "category": "Category",
         "unit": "Unit",
+        "value": "Value",
         "monthly_change": "Monthly Change",
         "year_over_year_change": "Year-over-Year Change",
         "monthly_percent_change": "Monthly Change (%)",
@@ -330,12 +344,74 @@ recent_table = recent_table.rename(
     }
 )
 
-st.dataframe(
-    recent_table,
-    use_container_width=True,
-    hide_index=True,
+display_table["Date"] = display_table["Date"].dt.strftime("%Y-%m")
+
+latest_tab, monthly_tab, yearly_tab = st.tabs(
+    ["Latest Values", "Monthly Change", "Year-over-Year Change"]
 )
 
+with latest_tab:
+    latest_values_table = (
+        display_table.sort_values("Date")
+        .groupby("Indicator")
+        .tail(1)
+        .copy()
+    )
+
+    latest_values_table = latest_values_table[
+        [
+            "Indicator",
+            "Date",
+            "Value",
+            "Unit",
+            "Monthly Change",
+            "Year-over-Year Change",
+            "Monthly Change (%)",
+            "Year-over-Year Change (%)",
+        ]
+    ]
+
+    st.dataframe(
+        latest_values_table,
+        use_container_width=True,
+        hide_index=True,
+    )
+
+with monthly_tab:
+    monthly_change_table = display_table[
+        [
+            "Indicator",
+            "Date",
+            "Value",
+            "Unit",
+            "Monthly Change",
+            "Monthly Change (%)",
+        ]
+    ].dropna(subset=["Monthly Change"])
+
+    st.dataframe(
+        monthly_change_table,
+        use_container_width=True,
+        hide_index=True,
+    )
+
+with yearly_tab:
+    yearly_change_table = display_table[
+        [
+            "Indicator",
+            "Date",
+            "Value",
+            "Unit",
+            "Year-over-Year Change",
+            "Year-over-Year Change (%)",
+        ]
+    ].dropna(subset=["Year-over-Year Change"])
+
+    st.dataframe(
+        yearly_change_table,
+        use_container_width=True,
+        hide_index=True,
+    )
 
 # Raw data section
 st.subheader("Source Data")
