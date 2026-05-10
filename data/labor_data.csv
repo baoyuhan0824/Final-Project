@@ -108,8 +108,9 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2025-11-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.0,0.14999999999999858,1.3999999999999986,0.407055630936215,3.93258426966292
 2025-12-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.02,0.020000000000003126,1.3300000000000054,0.0540540540540535,3.7265340431493543
 2026-01-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.15,0.12999999999999545,1.3099999999999952,0.35116153430576613,3.655133928571419
-2026-02-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.29,0.14000000000000057,1.3500000000000014,0.3768506056527565,3.7562604340567685
-2026-03-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.38,0.09000000000000341,1.2700000000000031,0.24135156878519748,3.517031293270567
+2026-02-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.27,0.12000000000000455,1.3300000000000054,0.32301480484524525,3.7006121313300167
+2026-03-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.35,0.0799999999999983,1.240000000000002,0.2146498524282281,3.433951813901981
+2026-04-01,CES0500000003,Average Hourly Earnings,Earnings,Dollars per hour,37.41,0.05999999999999517,1.2899999999999991,0.16064257028112205,3.5714285714285587
 2017-01-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.4,,,,
 2017-02-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.3,-0.10000000000000142,,-0.29069767441860517,
 2017-03-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.3,0.0,,0.0,
@@ -221,6 +222,7 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2026-01-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.3,0.09999999999999432,0.19999999999999574,0.29239766081869956,0.586510263929596
 2026-02-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.3,0.0,0.09999999999999432,0.0,0.29239766081869956
 2026-03-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.2,-0.09999999999999432,0.0,-0.2915451895043608,0.0
+2026-04-01,CES0500000002,Average Weekly Hours,Hours,Hours,34.3,0.09999999999999432,0.0,0.29239766081869956,0.0
 2017-01-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,152152.0,,,,
 2017-02-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,152480.0,328.0,,0.21557389978441588,
 2017-03-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,153065.0,585.0,,0.38365687303252294,
@@ -331,6 +333,7 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2026-01-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,163097.0,-895.0,1511.0,-0.5457583296746171,0.9351057641132199
 2026-02-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,162912.0,-185.0,-919.0,-0.11342943156525953,-0.5609438995061944
 2026-03-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,162848.0,-64.0,-490.0,-0.03928501276763141,-0.29999142881631524
+2026-04-01,LNS12000000,Civilian Employment,Employment,Thousands of persons,162622.0,-226.0,-887.0,-0.13877972096678626,-0.5424777840975059
 2017-01-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,159620.0,,,,
 2017-02-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,159859.0,239.0,,0.14973061019922795,
 2017-03-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,160137.0,278.0,,0.17390325224104775,
@@ -441,6 +444,7 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2026-01-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,170465.0,-1030.0,1959.0,-0.6006006006005982,1.1625698788173766
 2026-02-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,170483.0,18.0,-213.0,0.010559352359718055,-0.12478324038055488
 2026-03-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,170087.0,-396.0,-354.0,-0.23228122452092492,-0.20769650494892877
+2026-04-01,LNS11000000,Civilian Labor Force,Labor Force,Thousands of persons,169995.0,-92.0,-646.0,-0.05408996572342506,-0.3785725587637234
 2017-01-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7468.0,,,,
 2017-02-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7379.0,-89.0,,-1.1917514729512635,
 2017-03-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7073.0,-306.0,,-4.14690337444098,
@@ -551,6 +555,7 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2026-01-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7368.0,-135.0,448.0,-1.7992802878848413,6.473988439306355
 2026-02-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7571.0,203.0,706.0,2.755157437567868,10.284049526584127
 2026-03-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7239.0,-332.0,135.0,-4.385153876634529,1.9003378378378288
+2026-04-01,LNS13000000,Civilian Unemployment,Unemployment,Thousands of persons,7373.0,134.0,241.0,1.8510844039231866,3.37913628715647
 2017-01-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,145628.0,,,,
 2017-02-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,145846.0,218.0,,0.14969648693932136,
 2017-03-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,145970.0,124.0,,0.08502118673121561,
@@ -660,8 +665,9 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2025-11-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158449.0,41.0,370.0,0.025882531185295043,0.23406018509732895
 2025-12-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158432.0,-17.0,116.0,-0.010729004285292554,0.07327117916067216
 2026-01-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158592.0,160.0,324.0,0.10098969905070199,0.2047160512548274
-2026-02-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158459.0,-133.0,149.0,-0.0838629943502811,0.09411913334596012
-2026-03-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158637.0,178.0,260.0,0.11233189657893217,0.1641652512675451
+2026-02-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158436.0,-156.0,126.0,-0.09836561743341576,0.07959067652074658
+2026-03-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158621.0,185.0,244.0,0.11676639147668588,0.1540627742664613
+2026-04-01,CES0000000001,Total Nonfarm Employment,Employment,Thousands of persons,158736.0,115.0,251.0,0.07249985815245275,0.15837460958449956
 2017-01-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.7,,,,
 2017-02-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.6,-0.10000000000000053,,-2.1276595744680993,
 2017-03-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.4,-0.1999999999999993,,-4.347826086956507,
@@ -772,3 +778,4 @@ date,series_id,indicator,category,unit,value,monthly_change,year_over_year_chang
 2026-01-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.3,-0.10000000000000053,0.20000000000000018,-2.272727272727282,4.878048780487809
 2026-02-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.4,0.10000000000000053,0.40000000000000036,2.3255813953488413,10.000000000000009
 2026-03-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.3,-0.10000000000000053,0.09999999999999964,-2.272727272727282,2.3809523809523725
+2026-04-01,LNS14000000,Unemployment Rate,Unemployment,Percent,4.3,0.0,0.09999999999999964,0.0,2.3809523809523725
